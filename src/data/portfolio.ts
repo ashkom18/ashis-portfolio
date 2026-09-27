@@ -192,21 +192,6 @@ export const skillCategories = [
   },
 ];
 
-export type Project = {
-  name: string;
-  description: string;
-  problem: string;
-  technologies: string[];
-  features: string[];
-  image?: string;
-  githubUrl?: string;
-  demoUrl?: string;
-  caseStudyUrl?: string;
-};
-
-/** Add projects here — the section renders cards automatically. */
-export const projects: Project[] = [];
-
 export const education = {
   degree: "Master's in Computer Science",
   university: "University of North Texas",
