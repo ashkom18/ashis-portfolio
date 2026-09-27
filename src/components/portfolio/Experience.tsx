@@ -80,7 +80,7 @@ export function Experience() {
                 aria-hidden
                 className="absolute top-8 -left-[1.9rem] size-2 rounded-full bg-foreground sm:-left-[2.9rem]"
               />
-              <ExperienceCard index={i} />
+              <ExperienceCard job={job} index={i} />
             </Reveal>
           ))}
         </ol>
