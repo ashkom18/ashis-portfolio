@@ -1,11 +1,4 @@
-import { Github, Linkedin, PenLine } from "lucide-react";
 import { navLinks, profile, socials } from "@/data/portfolio";
-
-const icons: Record<string, typeof Github> = {
-  LinkedIn: Linkedin,
-  GitHub: Github,
-  Medium: PenLine,
-};
 
 export function Footer() {
   const active = socials.filter((s) => s.url);
@@ -42,23 +35,19 @@ export function Footer() {
         </div>
 
         {active.length > 0 ? (
-          <ul className="flex gap-3">
-            {active.map((social) => {
-              const Icon = icons[social.label] ?? PenLine;
-              return (
-                <li key={social.label}>
-                  <a
-                    href={social.url}
-                    target="_blank"
-                    rel="noreferrer noopener"
-                    aria-label={social.label}
-                    className="inline-flex rounded-md border border-border p-2.5 text-muted-foreground transition-colors hover:border-border-strong hover:text-foreground"
-                  >
-                    <Icon className="size-4" aria-hidden />
-                  </a>
-                </li>
-              );
-            })}
+          <ul className="flex flex-wrap gap-x-8 gap-y-2">
+            {active.map((social) => (
+              <li key={social.label}>
+                <a
+                  href={social.url}
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  className="font-mono text-xs tracking-wider text-muted-foreground transition-colors hover:text-foreground"
+                >
+                  {social.url}
+                </a>
+              </li>
+            ))}
           </ul>
         ) : (
           <p className="font-mono text-xs tracking-wider text-muted-foreground">

@@ -1,4 +1,3 @@
-import { ArrowRight, Download } from "lucide-react";
 import { profile } from "@/data/portfolio";
 import portrait from "@/assets/ashish-portrait.png.asset.json";
 import { Reveal } from "./Reveal";
@@ -26,31 +25,6 @@ export function Hero() {
             </p>
           </Reveal>
           <Reveal delay={240}>
-            <div className="mt-9 flex flex-wrap items-center gap-3">
-              <a
-                href="#experience"
-                className="inline-flex items-center gap-2 rounded-md bg-primary px-5 py-3 text-sm font-medium text-primary-foreground transition-transform hover:-translate-y-0.5"
-              >
-                View My Experience
-                <ArrowRight className="size-4" />
-              </a>
-              <a
-                href="#contact"
-                className="inline-flex items-center rounded-md border border-border-strong px-5 py-3 text-sm font-medium text-foreground transition-colors hover:bg-accent"
-              >
-                Let's Connect
-              </a>
-              <a
-                href={profile.resumeUrl}
-                download
-                className="inline-flex items-center gap-2 px-2 py-3 text-sm text-muted-foreground transition-colors hover:text-foreground"
-              >
-                <Download className="size-4" />
-                Download Resume
-              </a>
-            </div>
-          </Reveal>
-          <Reveal delay={320}>
             <p className="mt-10 font-mono text-xs tracking-wider text-muted-foreground">
               {profile.heroStack.join("  •  ")}
             </p>
