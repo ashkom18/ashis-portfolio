@@ -20,9 +20,9 @@ export const profile = {
 
 /** Add real URLs here when available; empty strings hide the link. */
 export const socials = [
-  { label: "LinkedIn", url: "" },
-  { label: "GitHub", url: "" },
-  { label: "Medium", url: "" },
+  { label: "LinkedIn", url: "https://www.linkedin.com/in/ashikom/" },
+  { label: "GitHub", url: "https://github.com/ashkom18" },
+  { label: "Medium", url: "https://medium.com/@ash.kommanaveni18" },
 ];
 
 export const navLinks = [
@@ -30,7 +30,6 @@ export const navLinks = [
   { label: "About", href: "#about" },
   { label: "Experience", href: "#experience" },
   { label: "Skills", href: "#skills" },
-  { label: "Projects", href: "#projects" },
   { label: "Education", href: "#education" },
   { label: "Contact", href: "#contact" },
 ];
