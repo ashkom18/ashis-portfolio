@@ -1,4 +1,4 @@
-# Pixel Perfect Clone
+# Pixel
 
 Implement exactly the screenshot and nothing else
 
