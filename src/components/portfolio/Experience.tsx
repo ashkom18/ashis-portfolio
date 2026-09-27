@@ -1,12 +1,11 @@
 import { useState } from "react";
 import { ChevronDown } from "lucide-react";
-import { experiences } from "@/data/portfolio";
+import { experiences, type Experience as ExperienceItem } from "@/data/portfolio";
 import { cn } from "@/lib/utils";
 import { Reveal } from "./Reveal";
 import { SectionHeading } from "./SectionHeading";
 
-function ExperienceCard({ index }: { index: number }) {
-  const job = experiences[index];
+function ExperienceCard({ job, index }: { job: ExperienceItem; index: number }) {
   const [open, setOpen] = useState(index === 0);
 
   return (
