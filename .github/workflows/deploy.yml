@@ -36,9 +36,8 @@ jobs:
 
       - name: Verify build output
         run: |
-          echo "Contents of dist:"
-          ls -la dist
-          test -f dist/index.html
+          echo "Contents of .output/public:"
+          ls -la .output/public
 
       - name: Setup GitHub Pages
         uses: actions/configure-pages@v5
@@ -46,7 +45,7 @@ jobs:
       - name: Upload build artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./dist
+          path: ./.output/public
 
   deploy:
     environment:
