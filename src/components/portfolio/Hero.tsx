@@ -39,7 +39,7 @@ export function Hero() {
             />
             <div className="absolute inset-3 overflow-hidden rounded-full border border-border bg-[var(--gradient-surface)] shadow-[var(--shadow-elegant)]">
               <img
-                src={portrait.url}
+                src="/ashis-portfolio/Profilephoto.jpeg"
                 alt="Ashish Kommanaveni"
                 className="size-full object-cover"
               />
