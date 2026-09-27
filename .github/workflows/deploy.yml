@@ -26,14 +26,19 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 20
-          
+          node-version: 22
 
       - name: Install dependencies
         run: npm install
 
       - name: Build application
         run: npm run build
+
+      - name: Verify build output
+        run: |
+          echo "Contents of dist:"
+          ls -la dist
+          test -f dist/index.html
 
       - name: Setup GitHub Pages
         uses: actions/configure-pages@v5
