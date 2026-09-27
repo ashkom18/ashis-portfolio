@@ -1,5 +1,6 @@
 import { ArrowRight, Download } from "lucide-react";
 import { profile } from "@/data/portfolio";
+import portrait from "@/assets/ashish-portrait.png.asset.json";
 import { Reveal } from "./Reveal";
 
 export function Hero() {
@@ -63,14 +64,11 @@ export function Hero() {
               className="absolute inset-0 animate-[spin_18s_linear_infinite] rounded-full border border-dashed border-border-strong"
             />
             <div className="absolute inset-3 overflow-hidden rounded-full border border-border bg-[var(--gradient-surface)] shadow-[var(--shadow-elegant)]">
-              {/* Replace this placeholder with a professional photograph:
-                  <img src={photo} alt="Ashish Kommanaveni" className="size-full object-cover" /> */}
-              <div className="flex size-full flex-col items-center justify-center gap-2">
-                <span className="font-display text-5xl font-semibold tracking-tight text-foreground">
-                  AK
-                </span>
-                <span className="section-label text-[0.6rem]">Portrait pending</span>
-              </div>
+              <img
+                src={portrait.url}
+                alt="Ashish Kommanaveni"
+                className="size-full object-cover"
+              />
             </div>
           </div>
         </Reveal>
