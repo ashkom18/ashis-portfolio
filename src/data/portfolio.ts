@@ -10,7 +10,7 @@ export const profile = {
   phone: "9402394952",
   location: "Dallas, TX",
   /** Place your resume PDF at public/resume.pdf to enable the download buttons. */
-  resumeUrl: "/resume.pdf",
+  //resumeUrl: "/resume.pdf",
   heroHeadline:
     "Building scalable enterprise applications with Java, Spring Boot & modern frontend technologies.",
   heroSummary:
